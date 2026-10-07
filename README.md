@@ -68,7 +68,7 @@ docker run --user 10001:10001 --read-only --cap-drop ALL --security-opt no-new-p
 - the failures: a wrong database password, a short key, no key at all (with and without an anonymous role);
 - that the logs hold no token.
 
-It needs Docker, Python 3 and `openssl`, and uses no secrets: every password and key is made up for the run. A weekly workflow runs it, so a change of the base images shows.
+It needs Docker, Python 3 and `openssl`, and uses no secrets: every password and key is made up for the run. A workflow runs it on every push and pull request (and by hand).
 
 ## Not checked
 
